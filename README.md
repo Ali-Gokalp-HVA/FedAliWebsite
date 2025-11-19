@@ -57,6 +57,9 @@ Smakenpagina
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  1. Contrast niet overal voldoende Sommige teksten staan op felle of drukke achtergronden (foto’s, kleurvlakken).
+  
+  2. Niet alle afbeeldingen hebben duidelijke alt-teksten Een deel van de afbeeldingen hebben beperkte alt-tektsten
 
 </details>
 
@@ -155,10 +158,7 @@ Smakenpagina
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
  
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is): 1. Contrast niet overal voldoende
-Sommige teksten staan op felle of drukke achtergronden (foto’s, kleurvlakken). Hierdoor kan de contrastratio onder de WCAG-norm komen. Dit maakt tekst moeilijker leesbaar voor slechtzienden.
-2. Niet alle afbeeldingen hebben duidelijke alt-teksten
-Een deel van de afbeeldingen lijkt een generieke of beperkte alt-tekst te hebben. Decoratieve afbeeldingen zouden juist een lege alt moeten hebben (alt=""), en inhoudelijke afbeeldingen verdienen een beschrijvende alt-tekst.
+  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is): 
 
 </details>
 
