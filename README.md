@@ -66,6 +66,7 @@ Smakenpagina
 
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
+    <img src="readme-images/breakdownschetsbenhome.png" width="375px" alt="breakdownschetshome">
 
   ### de hele pagina: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
