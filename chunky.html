@@ -4,24 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ben & Jerry’s – Chunky Monkey</title>
-
   <link href="styles/style.css" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
-
   <a href="#" class="logo">
     <img src="images/logobenjerry.png" alt="Ben & Jerry's logo">
   </a>
 
-  <button aria-expanded="false"
-          aria-controls="mobiel-menu"
-          aria-label="Menu openen">
-    <span></span>
-    <span></span>
-    <span></span>
+  <button aria-expanded="false" aria-controls="mobiel-menu" aria-label="Menu openen">
+    <span></span><span></span><span></span>
   </button>
 
   <nav id="mobiel-menu" aria-label="Hoofdmenu" hidden>
@@ -34,29 +28,28 @@
       <li><a href="#">Neem contact met ons op</a></li>
     </ul>
   </nav>
-
 </header>
 
 
 <main>
 
-  <section>
-    <img src="images/chunky-banner.jpg" alt="">
-    <img src="images/chunky-hero.png" alt="">
+  <section class="chunky-hero">
+    <img src="images/smakenchunky.png" alt="">
+    <img src="images/smakenbanner.jpg" alt="">
   </section>
 
-  <section>
+  <section class="smaak-intro">
     <h1>Chunky Monkey</h1>
     <p>Bananenroomijs met walnoten en chocolade banaantjes.</p>
     <a href="#">Verkooppunten</a>
   </section>
 
-  <section>
+  <section class="over-smaak">
     <h2>Over deze smaak</h2>
     <p>om een smaak te</p>
   </section>
 
-  <section>
+  <section class="verkrijgbaar">
     <h2>Verkrijgbaar als:</h2>
     <ul>
       <li>
@@ -68,35 +61,23 @@
     </ul>
   </section>
 
-  <section>
+  <section class="gallerij">
     <img src="images/chunky-gallery1.jpg" alt="">
     <img src="images/chunky-gallery2.jpg" alt="">
     <img src="images/chunky-gallery3.jpg" alt="">
   </section>
 
-  <section>
+  <section class="waarde-grid">
     <h2>Waardvolle aankoop</h2>
     <ul>
-      <li>
-        <img src="images/waarde1.png" alt="">
-        <p>Fairtrade</p>
-      </li>
-      <li>
-        <img src="images/waarde2.png" alt="">
-        <p>Verantwoordelijke verpakking</p>
-      </li>
-      <li>
-        <img src="images/waarde3.png" alt="">
-        <p>plant based tub & lid</p>
-      </li>
-      <li>
-        <img src="images/waarde4.png" alt="">
-        <p>Caring Dairy with Free Grazing</p>
-      </li>
+      <li><img src="images/waarde1.png"><p>Fairtrade</p></li>
+      <li><img src="images/waarde2.png"><p>Verantwoordelijke verpakking</p></li>
+      <li><img src="images/waarde3.png"><p>Plant based tub & lid</p></li>
+      <li><img src="images/waarde4.png"><p>Caring Dairy with Free Grazing</p></li>
     </ul>
   </section>
 
-  <section>
+  <section class="details-block">
     <details>
       <summary>Voedingscertificeringen</summary>
       <img src="images/vegan.png" alt="">
@@ -109,36 +90,36 @@
     </details>
   </section>
 
-  <section>
+  <section class="hoe-gemaakt">
     <img src="images/hoe-gemaakt.png" alt="">
     <h2>Ontdek hoe het gemaakt wordt</h2>
     <a href="#">Learn how we make ice cream</a>
   </section>
 
-  <section>
+  <section class="recyclen">
     <h2>Recyclen</h2>
-    <p>Van het mixen van Fairtrade</p>
+    <p>Van het mixen van Fairtrade…</p>
   </section>
 
-  <section>
+  <section class="aanbevolen">
     <h2>Aanbevolen smaken</h2>
     <ul>
       <li>
-        <img src="images/sweetmango.jpg" alt="">
+        <img src="images/sweetmango.png" alt="">
         <p>Onze klassiekers</p>
         <h3>Sweet Mango Memories</h3>
         <a href="#">Meer lezen</a>
       </li>
 
       <li>
-        <img src="images/chocolatefudge.jpg" alt="">
+        <img src="images/chocolatefudge.png" alt="">
         <p>Onze klassiekers</p>
         <h3>Chocolate Fudge Brownie</h3>
         <a href="#">Meer lezen</a>
       </li>
 
       <li>
-        <img src="images/cookiedough.jpg" alt="">
+        <img src="images/cookiedough.png" alt="">
         <p>Onze klassiekers</p>
         <h3>Cookie Dough</h3>
         <a href="#">Meer lezen</a>
@@ -146,39 +127,57 @@
     </ul>
   </section>
 
-  <section>
+  <section class="missie-titel">
     <h2>Wij maken dolgraag ijs, maar ons werk krijgt pas echt betekenis wanneer wij ons bedrijf inzetten om de wereld mooier te maken.</h2>
+  </section>
 
-    <section>
-      <ul>
-        <li>
-          <img src="images/ingredienten.jpg" alt="">
+  <section class="missie-blok">
+    <ul>
+      <li>
+        <img src="images/ingredienten.svg" alt="">
+        <div>
           <h3>Zorgvuldig uitgekozen ingrediënten</h3>
           <p>Onze ingrediënten dragen bij aan positieve verandering.</p>
           <a href="#">Productinkoop</a>
-        </li>
+        </div>
+      </li>
 
-        <li>
-          <img src="images/gedeeld-succes.jpg" alt="">
+      <li>
+        <img src="images/gedeeld-succes.svg" alt="">
+        <div>
           <h3>Gedeeld succes</h3>
           <p>Ons doel is welvaart creëren voor iedereen.</p>
           <a href="#">Onze missie en waarden</a>
-        </li>
+        </div>
+      </li>
 
-        <li>
-          <img src="images/verschil-maken.jpg" alt="">
+      <li>
+        <img src="images/verschil-maken.svg" alt="">
+        <div>
           <h3>Een verschil maken</h3>
           <p>Wij spreken ons uit over onderwerpen die ons nauw aan het hart liggen.</p>
           <a href="#">Onderwerpen die wij</a>
-        </li>
-      </ul>
-    </section>
+        </div>
+      </li>
+    </ul>
   </section>
 
 </main>
 
 
 <footer>
+
+  <section>
+    <img src="images/woody.svg" alt="">
+    <h2>Meld je aan voor onze nieuwsbrief</h2>
+    <p>Blijf op de hoogte van het laatste nieuws en acties.</p>
+
+    <form>
+      <label for="email">E-mailadres</label>
+      <input id="email" type="email">
+      <button type="submit">Aanmelden</button>
+    </form>
+  </section>
 
   <section>
     <h2>Volg ons</h2>
