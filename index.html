@@ -4,23 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ben & Jerry's – Home</title>
-  <link href="styles/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" type="image/png" href="images/webicon.png">
+  
 </head>
 
 <body>
 
+<div id="laadscherm">
+  <img src="images/otterlaad.png" alt="Bezig met laden..." id="laad-afbeelding">
+</div>
+
+
 <header>
-  <a href="#" class="logo">
+  <a href="index.html" class="logo">
     <img src="images/logobenjerry.png" alt="Ben & Jerry's logo">
   </a>
 
-  <button aria-expanded="false" aria-controls="mobiel-menu" aria-label="Menu openen">
+  <div class="tekstgrootte-controls">
+    <button id="verklein">Klein</button>
+    <button id="reset">Normaal</button>
+    <button id="vergroten">Groot</button>
+  </div>
+
+  <button class="open-menu" aria-label="Menu openen">
     <span></span><span></span><span></span>
   </button>
 
-  <nav id="mobiel-menu" aria-label="Hoofdmenu" hidden>
+  <nav id="mobiel-menu" aria-label="Hoofdmenu">
+    <button class="sluit-menu" aria-label="Menu sluiten">✕</button>
     <ul>
-      <li><a href="#">Smaken</a></li>
+      <li><a href="chunky.html">Smaken</a></li>
       <li><a href="#">Verkooppunten</a></li>
       <li><a href="#">Activisme</a></li>
       <li><a href="#">Over Ben & Jerry’s</a></li>
@@ -30,145 +44,151 @@
   </nav>
 </header>
 
-
 <main>
 
   <section class="hero">
-    <img src="images/banner.jpg" alt="">
+    <img src="images/banner.jpg" alt="een foto van de bohemian raspberry smaak die op een tafel staat, met een roze achtergrond en paarse silhouetten van een band">
     <h1>Bohemian Raspberry</h1>
     <p>Laat je smaakpapillen rocken met de terugkeer van de zoete eerbetoon aan Queen.</p>
-    <a href="#">Lees meer</a>
+    <a href="#" class="geelknop">Lees meer</a>
   </section>
 
   <section class="verkooppunten-blok">
     <h2>Verkooppunten</h2>
-    <img src="images/verkooppunten.jpg" alt="">
+    <img src="images/verkooppunten.jpg" alt="een ingezoomd foto van een ben en jerry's ijs, blauw achtergrond met vier witte pijlen en twee kleine wolkjes">
     <h3>Verkooppunten</h3>
     <p>Vind jouw dichtstbijzijnde supermarkt of bestel Ben & Jerry’s online.</p>
-    <a href="#">Vind nu!</a>
+    <a href="#" class="geelknop">Vind nu!</a>
   </section>
 
   <section class="doe-mee-blok">
-    <img src="images/activisme-handen-aarde.jpg" alt="">
+    <img src="images/activisme-handen-aarde.jpg" alt="een illustratie van een aardbol die aangeraakt wordt door handen die allemaal een andere afkomst hebben, omdat de handen verschillende kleuren zijn">
     <h2>Doe mee</h2>
     <p>Wij zetten ons in voor onderwerpen die ons nauw aan het hart liggen. Ontdek hoe jij meehelpt.</p>
-    <a href="#">Ontdek meer over onze waarden</a>
+    <a href="#" class="geelknop">Ontdek meer over onze waarden</a>
   </section>
 
   <section class="topverhalen">
     <h2>Topverhalen</h2>
-
     <ul>
-      <li>
-        <img src="images/story1.jpg" alt="">
-        <p>11 november 2025</p>
-        <h3>Spectacu-Love Cheesecake</h3>
-        <p>Sinterklaas is alweer in het land, met dit...</p>
-        <a href="#">Meer lezen</a>
-      </li>
 
       <li>
-        <img src="images/story2.jpg" alt="">
-        <p>17 oktober 2025</p>
+        <img src="images/story1.jpg" alt="Rij grafstenen met kleurrijke emblemen langs een witte houten schutting in een buitenomgeving.">
+        <p>11 november 2025</p>
         <h3>The Flavour Graveyard</h3>
         <p>Honouring our dearly de-pinted flavours...</p>
         <a href="#">Meer lezen</a>
       </li>
 
       <li>
-        <img src="images/story3.jpg" alt="">
-        <p>1 mei 2025</p>
+        <img src="images/story2.jpg" alt="Ben & Jerry’s Half Baked-ijs met een brandend kaarsje erop, omringd door cupcakes en kleurrijke ballonnen op een feestelijk gedekte tafel buiten.">
+        <p>17 oktober 2025</p>
         <h3>QUIZ: Celebrate Our Birthday</h3>
         <p>Test je kennis met 10 vragen...</p>
         <a href="#">Meer lezen</a>
       </li>
-    </ul>
-  </section>
-
-  <section class="missie-titel">
-    <h2>Wij maken dolgraag ijs, maar ons werk krijgt pas echt betekenis wanneer wij ons bedrijf inzetten om de wereld mooier te maken.</h2>
-  </section>
-
-  <section class="missie-blok">
-    <ul>
-      <li>
-        <img src="images/ingredienten.svg" alt="">
-        <div>
-          <h3>Zorgvuldig uitgekozen ingrediënten</h3>
-          <p>Onze ingrediënten dragen bij aan positieve verandering.</p>
-          <a href="#">Productinkoop</a>
-        </div>
-      </li>
 
       <li>
-        <img src="images/gedeeld-succes.svg" alt="">
-        <div>
-          <h3>Gedeeld succes</h3>
-          <p>Ons doel is welvaart creëren voor iedereen.</p>
-          <a href="#">Onze missie en waarden</a>
-        </div>
+        <img src="images/story3.jpg" alt="Illustratie van een rechter achter een bureau met een EU-vlag, terwijl diverse mensen zoals hulpverleners en een arts voor hem staan.">
+        <p>1 mei 2025</p>
+        <h3>Spectacu-Love Cheesecake</h3>
+        <p>Sinterklaas is alweer in het land, met dit...</p>
+        <a href="#">Meer lezen</a>
       </li>
 
-      <li>
-        <img src="images/verschil-maken.svg" alt="">
-        <div>
-          <h3>Een verschil maken</h3>
-          <p>Wij spreken ons uit over onderwerpen die ons nauw aan het hart liggen.</p>
-          <a href="#">Onderwerpen die wij</a>
-        </div>
-      </li>
     </ul>
   </section>
 
 </main>
 
+<section class="missie-container">
 
-<footer>
+  <h2>Wij maken dolgraag ijs, maar ons werk krijgt pas echt betekenis wanneer wij ons bedrijf inzetten om de wereld mooier te maken.</h2>
 
-  <section>
-    <img src="images/woody.svg" alt="">
+  <ul class="missie-blok">
+
+    <li>
+      <img src="images/ingredienten.svg" alt="Lijntekening van een vrolijke koe met hartjes eromheen op een gele achtergrond">
+      <div>
+        <h3>Zorgvuldig uitgekozen ingrediënten</h3>
+        <p>Onze ingrediënten dragen bij aan positieve verandering.</p>
+        <a href="#">Productinkoop</a>
+      </div>
+    </li>
+
+    <li>
+      <img src="images/gedeeld-succes.svg" alt="Wit vredesteken op een gele ronde achtergrond.">
+      <div>
+        <h3>Gedeeld succes</h3>
+        <p>Ons doel is welvaart creëren voor iedereen.</p>
+        <a href="#">Onze missie en waarden</a>
+      </div>
+    </li>
+
+    <li>
+      <img src="images/verschil-maken.svg" alt="Witte tekening van een smeltende aarde op een gele ronde achtergrond.">
+      <div>
+        <h3>Een verschil maken</h3>
+        <p>Wij spreken ons uit over onderwerpen die ons nauw aan het hart liggen.</p>
+        <a href="#">Onderwerpen die wij belangrijk vinden</a>
+      </div>
+    </li>
+
+  </ul>
+
+</section>
+
+<footer class="footer">
+
+  <section class="footer-top">
+    <img class="footer-koe" src="images/woody.svg" alt="Illustratie van een Zwart-witte koe die door een megafoon roept">
+
     <h2>Meld je aan voor onze nieuwsbrief</h2>
-    <p>Blijf op de hoogte van het laatste nieuws en acties.</p>
+    <p>Wij zorgen ervoor dat je als eerste op de hoogte bent van nieuwe smaken, fun activiteiten en sociale initiatieven van Ben & Jerry's! Get the scoop!</p>
 
-    <form>
-      <label for="email">E-mailadres</label>
-      <input id="email" type="email">
-      <button type="submit">Aanmelden</button>
+    <form class="footer-form">
+      <input type="email" placeholder="Voer je e-mailadres in">
+      <button type="submit">→</button>
     </form>
   </section>
 
-  <section>
-    <h2>Volg ons</h2>
+  <section class="footer-links">
+    <h2>Blijf op de hoogte</h2>
+    <a href="https://weloveotters.com">Stuur ons feedback</a>
+    <a href="https://weloveotters.com">unsubscribe</a>
+  </section>
+
+  <section class="footer-socials">
+    <h2>Volg ons!</h2>
     <ul>
-      <li><a href="#">Facebook</a></li>
-      <li><a href="#">Instagram</a></li>
-      <li><a href="#">TikTok</a></li>
-      <li><a href="#">X</a></li>
+      <li><a href="https://weloveotters.com/"><img src="images/facebooklogo.png" alt="Facebook logo"></a></li>
+      <li><a href="https://weloveotters.com/"><img src="images/instagramlogo.png" alt="Instagram logo"></a></li>
+      <li><a href="https://weloveotters.com/"><img src="images/tiktoklogo.png" alt="TikTok logo"></a></li>
+      <li><a href="https://weloveotters.com/"><img src="images/xlogo.png" alt="X logo"></a></li>
     </ul>
   </section>
 
-  <section>
+  <section class="footer-more">
     <h2>Meer informatie</h2>
-    <p>Nieuws</p>
-    <p>Over ons</p>
-    <p>Hoe wij zaken doen</p>
+    <a href="https://weloveotters.com">Nieuws</a>
+    <a href="https://weloveotters.com">Over ons</a>
+    <a href="https://weloveotters.com">Hoe wij zaken doen</a>
   </section>
 
-  <section>
-    <button type="button">NL</button>
-    <ul>
-      <li><a href="#">Toegankelijkheid</a></li>
-      <li><a href="#">Neem contact met ons op</a></li>
-      <li><a href="#">Cookies</a></li>
-      <li><a href="#">Privacy</a></li>
-      <li><a href="#">Gebruiksvoorwaarden</a></li>
-      <li><a href="#">Sitemap</a></li>
-    </ul>
+  <section class="footer-bottom">
+    <a href="https://weloveotters.com">Toegankelijkheid</a>
+    <a href="https://weloveotters.com">Neem contact met ons op</a>
+    <a href="https://weloveotters.com">Cookieverklaring</a>
+    <a href="https://weloveotters.com">Privacyverklaring</a>
+    <a href="https://weloveotters.com">Gebruiksvoorwaarden</a>
+    <a href="https://weloveotters.com">Sitemap</a>
   </section>
 
-  <button type="button">Cookie-instellingen</button>
+<img src="images/pijlomhoog.png" alt="Naar boven" id="scroll-omhoog">
+
 
 </footer>
 
+<script src="scripts/script.js"></script>
 </body>
 </html>
