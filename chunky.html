@@ -4,23 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ben & Jerry’s – Chunky Monkey</title>
-  <link href="styles/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" type="image/png" href="images/webicon.png">
 </head>
 
 <body>
 
+<div id="laadscherm">
+  <img src="images/otterlaad.png" alt="Bezig met laden..." id="laad-afbeelding">
+</div>
+
 <header>
-  <a href="#" class="logo">
+  <a href="index.html" class="logo">
     <img src="images/logobenjerry.png" alt="Ben & Jerry's logo">
   </a>
 
-  <button aria-expanded="false" aria-controls="mobiel-menu" aria-label="Menu openen">
+  <div class="tekstgrootte-controls">
+    <button id="verklein">Klein</button>
+    <button id="reset">Normaal</button>
+    <button id="vergroten">Groot</button>
+  </div>
+
+  <button class="open-menu" aria-label="Menu openen">
     <span></span><span></span><span></span>
   </button>
 
-  <nav id="mobiel-menu" aria-label="Hoofdmenu" hidden>
+  <nav id="mobiel-menu" aria-label="Hoofdmenu">
+    <button class="sluit-menu" aria-label="Menu sluiten">✕</button>
     <ul>
-      <li><a href="#">Smaken</a></li>
+      <li><a href="chunky.html">Smaken</a></li>
       <li><a href="#">Verkooppunten</a></li>
       <li><a href="#">Activisme</a></li>
       <li><a href="#">Over Ben & Jerry’s</a></li>
@@ -30,23 +42,21 @@
   </nav>
 </header>
 
-
 <main>
 
   <section class="chunky-hero">
-    <img src="images/smakenchunky.png" alt="">
-    <img src="images/smakenbanner.jpg" alt="">
+    <img src="images/chunkyhero.png" alt="foto van Chunky Monkey op een getekende achtergrond van een weiland">
   </section>
 
   <section class="smaak-intro">
     <h1>Chunky Monkey</h1>
-    <p>Bananenroomijs met walnoten en chocolade banaantjes.</p>
-    <a href="#">Verkooppunten</a>
+    <p>Bananenroomijs met stukken walnoten en choco-banaantjes</p>
+    <a href="#" class="geelknop">Verkooppunten</a>
   </section>
 
   <section class="over-smaak">
     <h2>Over deze smaak</h2>
-    <p>om een smaak te</p>
+    <p>Om een smaak te creëren die net zo leuk is als de naam, hebben we geëxperimenteerd totdat we zeker wisten dat we een winnaar hadden: de nootachtigste choco-kan-ik-niet-genoeg-van-krijgen-creatie ooit.</p>
   </section>
 
   <section class="verkrijgbaar">
@@ -54,7 +64,7 @@
     <ul>
       <li>
         <a href="#">
-          <img src="images/tub.png" alt="">
+          <img src="images/tub.png" alt="Illustratie van een gele ijsbeker met het label 'Tubs'.">
           <p>Tubs</p>
         </a>
       </li>
@@ -62,155 +72,162 @@
   </section>
 
   <section class="gallerij">
-    <img src="images/chunky-gallery1.jpg" alt="">
-    <img src="images/chunky-gallery2.jpg" alt="">
-    <img src="images/chunky-gallery3.jpg" alt="">
+    <img src="images/chunky-gallery1.jpg" alt="Beker Chunky Monkey-ijs omringd door stukjes banaan, chocolade en walnoten op een houten oppervlak.">
+    <img src="images/chunky-gallery2.jpg" alt="Beker Chunky Monkey-ijs op een keukenblad met een lepel ijs op de voorgrond.">
+    <img src="images/chunky-gallery3.jpg" alt="Beker Chunky Monkey-ijs met bananen en walnoten op de achtergrond.">
   </section>
 
   <section class="waarde-grid">
-    <h2>Waardvolle aankoop</h2>
+    <h2>Waardevolle aankoop</h2>
     <ul>
-      <li><img src="images/waarde1.png"><p>Fairtrade</p></li>
-      <li><img src="images/waarde2.png"><p>Verantwoordelijke verpakking</p></li>
-      <li><img src="images/waarde3.png"><p>Plant based tub & lid</p></li>
-      <li><img src="images/waarde4.png"><p>Caring Dairy with Free Grazing</p></li>
+      <li><img src="images/waarde1.png" alt="Fairtrade-logo"><p>Fairtrade</p></li>
+      <li><img src="images/waarde2.png" alt="Recyclebare verpakking icoon"><p>Verantwoordelijke verpakking</p></li>
+      <li><img src="images/waarde3.png" alt="Icoon van een beker met bladeren"><p>Plant based tub & lid</p></li>
+      <li><img src="images/waarde4.png" alt="Icoon van een glimlachende koe"><p>Caring Dairy with Free Grazing</p></li>
     </ul>
   </section>
 
   <section class="details-block">
     <details>
       <summary>Voedingscertificeringen</summary>
-      <img src="images/vegan.png" alt="">
+      <img src="images/vegan.png" alt="plantje in pot icoon">
       <p>Veganistisch</p>
     </details>
 
     <details>
       <summary>Ingrediënten</summary>
-      <p>ROOM (25%), suiker, water, gecondenseerde magere MELK, WALNOTEN (5%), bananenpuree (4,5%), glucose-fructosesiroop, EIGEEL, cacao, kokosolie.</p>
+      <p>
+        ROOM (25%), suiker, water, gecondenseerde magere MELK, WALNOTEN (5%), bananenpuree (4,5%), glucose-fructosestroop, EIGEEL¹, kokosolie, magere cacaopoeder, citroensap op basis van geconcentreerd sap, stabilisatoren (guargom, carrageen), emulgator (SOJALECITHINE), MELKVET, natuurlijk aroma, natuurlijk vanille-aroma. Kan andere noten en pinda’s bevatten.  
+        Suiker, banaan, cacao, vanille: onder Fairtrade voorwaarden ingekocht volgens het mass balance principe, totaal 25%F. ¹Van vrije uitloopeieren. Past in een vegetarisch dieet.  
+        Bezoek info.fairtrade.net/sourcing
+      </p>
     </details>
   </section>
 
   <section class="hoe-gemaakt">
-    <img src="images/hoe-gemaakt.png" alt="">
-    <h2>Ontdek hoe het gemaakt wordt</h2>
-    <a href="#">Learn how we make ice cream</a>
+    <img src="images/hoe-gemaakt.png" alt="Icoon van een hand die een ijshoorntje vasthoudt">
+    <div class="hoe-gemaakt-tekst">
+      <h2>Ontdek hoe het gemaakt wordt</h2>
+      <a href="#">Learn how we make ice cream</a>
+    </div>
   </section>
 
   <section class="recyclen">
     <h2>Recyclen</h2>
-    <p>Van het mixen van Fairtrade…</p>
+    <p>Van het mixen van Fairtrade chunks & swirls tot het gebruiken van weidemelk. Het is een vreugdevolle reis naar een ijstastische wereld! Elke pint verdient een zoet einde… gooi jouw lege pint dus in de prullenbak. Dankjewel van ons allemaal bij Ben & Jerry’s!</p>
   </section>
 
   <section class="aanbevolen">
     <h2>Aanbevolen smaken</h2>
     <ul>
       <li>
-        <img src="images/sweetmango.png" alt="">
+        <img src="images/sweetmango.png" alt="Ben & Jerry’s Sweet Mango Memories ijs">
         <p>Onze klassiekers</p>
         <h3>Sweet Mango Memories</h3>
-        <a href="#">Meer lezen</a>
+        <a href="#" class="transparantknop">Meer lezen</a>
       </li>
 
       <li>
-        <img src="images/chocolatefudge.png" alt="">
+        <img src="images/chocolatefudge.png" alt="Ben & Jerry’s Chocolate Fudge Brownie ijs">
         <p>Onze klassiekers</p>
         <h3>Chocolate Fudge Brownie</h3>
-        <a href="#">Meer lezen</a>
+        <a href="#" class="transparantknop">Meer lezen</a>
       </li>
 
       <li>
-        <img src="images/cookiedough.png" alt="">
+        <img src="images/cookiedough.png" alt="Ben & Jerry’s Cookie Dough ijs">
         <p>Onze klassiekers</p>
-        <h3>Cookie Dough</h3>
-        <a href="#">Meer lezen</a>
-      </li>
-    </ul>
-  </section>
-
-  <section class="missie-titel">
-    <h2>Wij maken dolgraag ijs, maar ons werk krijgt pas echt betekenis wanneer wij ons bedrijf inzetten om de wereld mooier te maken.</h2>
-  </section>
-
-  <section class="missie-blok">
-    <ul>
-      <li>
-        <img src="images/ingredienten.svg" alt="">
-        <div>
-          <h3>Zorgvuldig uitgekozen ingrediënten</h3>
-          <p>Onze ingrediënten dragen bij aan positieve verandering.</p>
-          <a href="#">Productinkoop</a>
-        </div>
-      </li>
-
-      <li>
-        <img src="images/gedeeld-succes.svg" alt="">
-        <div>
-          <h3>Gedeeld succes</h3>
-          <p>Ons doel is welvaart creëren voor iedereen.</p>
-          <a href="#">Onze missie en waarden</a>
-        </div>
-      </li>
-
-      <li>
-        <img src="images/verschil-maken.svg" alt="">
-        <div>
-          <h3>Een verschil maken</h3>
-          <p>Wij spreken ons uit over onderwerpen die ons nauw aan het hart liggen.</p>
-          <a href="#">Onderwerpen die wij</a>
-        </div>
+        <h3>De Choco Cookie Dough</h3>
+        <a href="#" class="transparantknop">Meer lezen</a>
       </li>
     </ul>
   </section>
 
 </main>
 
+<section class="missie-container">
+  <h2>Wij maken dolgraag ijs, maar ons werk krijgt pas echt betekenis wanneer wij ons bedrijf inzetten om de wereld mooier te maken.</h2>
 
-<footer>
+  <ul class="missie-blok">
+    <li>
+      <img src="images/ingredienten.svg" alt="Illustratie van een vrolijke koe met hartjes">
+      <div>
+        <h3>Zorgvuldig uitgekozen ingrediënten</h3>
+        <p>Onze ingrediënten dragen bij aan positieve verandering.</p>
+        <a href="#">Productinkoop</a>
+      </div>
+    </li>
 
-  <section>
-    <img src="images/woody.svg" alt="">
+    <li>
+      <img src="images/gedeeld-succes.svg" alt="Wit vredesteken op gele cirkel">
+      <div>
+        <h3>Gedeeld succes</h3>
+        <p>Ons doel is welvaart creëren voor iedereen.</p>
+        <a href="#">Onze missie en waarden</a>
+      </div>
+    </li>
+
+    <li>
+      <img src="images/verschil-maken.svg" alt="Smeltende aarde icoon">
+      <div>
+        <h3>Een verschil maken</h3>
+        <p>Wij spreken ons uit over onderwerpen die ons nauw aan het hart liggen.</p>
+        <a href="#">Onderwerpen die wij belangrijk vinden</a>
+      </div>
+    </li>
+  </ul>
+</section>
+<footer class="footer">
+
+  <section class="footer-top">
+    <img class="footer-koe" src="images/woody.svg" alt="Illustratie van een Zwart-witte koe die door een megafoon roept">
+
     <h2>Meld je aan voor onze nieuwsbrief</h2>
-    <p>Blijf op de hoogte van het laatste nieuws en acties.</p>
+    <p>Wij zorgen ervoor dat je als eerste op de hoogte bent van nieuwe smaken, fun activiteiten en sociale initiatieven van Ben & Jerry's! Get the scoop!</p>
 
-    <form>
-      <label for="email">E-mailadres</label>
-      <input id="email" type="email">
-      <button type="submit">Aanmelden</button>
+    <form class="footer-form">
+      <input type="email" placeholder="Voer je e-mailadres in">
+      <button type="submit">→</button>
     </form>
   </section>
 
-  <section>
-    <h2>Volg ons</h2>
+  <section class="footer-links">
+    <h2>Blijf op de hoogte</h2>
+    <a href="https://weloveotters.com">Stuur ons feedback</a>
+    <a href="https://weloveotters.com">unsubscribe</a>
+  </section>
+
+  <section class="footer-socials">
+    <h2>Volg ons!</h2>
     <ul>
-      <li><a href="#">Facebook</a></li>
-      <li><a href="#">Instagram</a></li>
-      <li><a href="#">TikTok</a></li>
-      <li><a href="#">X</a></li>
+      <li><a href="https://weloveotters.com/"><img src="images/facebooklogo.png" alt="Facebook logo"></a></li>
+      <li><a href="https://weloveotters.com/"><img src="images/instagramlogo.png" alt="Instagram logo"></a></li>
+      <li><a href="https://weloveotters.com/"><img src="images/tiktoklogo.png" alt="TikTok logo"></a></li>
+      <li><a href="https://weloveotters.com/"><img src="images/xlogo.png" alt="X logo"></a></li>
     </ul>
   </section>
 
-  <section>
+  <section class="footer-more">
     <h2>Meer informatie</h2>
-    <p>Nieuws</p>
-    <p>Over ons</p>
-    <p>Hoe wij zaken doen</p>
+    <a href="https://weloveotters.com">Nieuws</a>
+    <a href="https://weloveotters.com">Over ons</a>
+    <a href="https://weloveotters.com">Hoe wij zaken doen</a>
   </section>
 
-  <section>
-    <button type="button">NL</button>
-    <ul>
-      <li><a href="#">Toegankelijkheid</a></li>
-      <li><a href="#">Neem contact met ons op</a></li>
-      <li><a href="#">Cookies</a></li>
-      <li><a href="#">Privacy</a></li>
-      <li><a href="#">Gebruiksvoorwaarden</a></li>
-      <li><a href="#">Sitemap</a></li>
-    </ul>
+  <section class="footer-bottom">
+    <a href="https://weloveotters.com">Toegankelijkheid</a>
+    <a href="https://weloveotters.com">Neem contact met ons op</a>
+    <a href="https://weloveotters.com">Cookieverklaring</a>
+    <a href="https://weloveotters.com">Privacyverklaring</a>
+    <a href="https://weloveotters.com">Gebruiksvoorwaarden</a>
+    <a href="https://weloveotters.com">Sitemap</a>
   </section>
 
-  <button type="button">Cookie-instellingen</button>
+<img src="images/pijlomhoog.png" alt="Naar boven" id="scroll-omhoog">
+
 
 </footer>
 
+<script src="scripts/script.js"></script>
 </body>
 </html>
